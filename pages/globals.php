@@ -7,6 +7,7 @@
         </span>
         Globals
     </h1>
+
     <p>
         Ce fichier définit les styles globaux du projet.
         Il contient les imports des autres fichiers CSS,

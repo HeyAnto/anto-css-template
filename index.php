@@ -7,6 +7,7 @@
         </span>
         Introduction
     </h1>
+
     <p>
         Bienvenue dans la mini documentation de mon template CSS réutilisable.
         J’ai conçu ce template selon ma propre manière de structurer et d’organiser mes projets web.
