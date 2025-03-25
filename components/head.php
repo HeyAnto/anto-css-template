@@ -12,10 +12,13 @@
     <title>Anto CSS Template</title>
 </head>
 
-<body>
-    <?php include_once "sidebar.php" ?>
+<body class="flex justify-center">
 
-    <content>
-        <?php include_once "header.php" ?>
+    <main class="flex">
+        <?php include_once "sidebar.php" ?>
 
-        <main>
+        <container class="flex flex-column">
+
+            <?php include_once "header.php" ?>
+
+            <content class="flex flex-column">

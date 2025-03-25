@@ -3,38 +3,34 @@
 
 @font-face {
   font-family: "BDO Grotesk";
-  src: url(../fonts/BDOGrotesk-VF.ttf) format("truetype");
+  src: url(../font/BDOGrotesk-VF.ttf) format("truetype");
 }
 
 :root {
   /* Primary Color */
   --color-dark: #000000;
   --color-white: #ffffff;
-  --color-light-grey: #e6e6e6;
 
   /* Secondary Color */
-  --color-green: #00be50;
+  --color-green: #4caf50;
+  --color-red: #f44336;
 
   /* Font Family */
-  --font-family: "BDO Grotesk", sans-serif;
+  --font-family: "BDO Grotesk", "Arial", sans-serif;
 
   /* Font Size */
   --font-size-p: 1rem;
   --font-size-h1: 2rem;
   --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
 
   /* Font Weight */
   --font-weight-regular: 400;
-  --font-weight-medium: 500;
   --font-weight-bold: 700;
 
   /* Line heights */
-  --line-height-p: 23px;
-  --line-height-h1: 45px;
-  --line-height-h2: 34px;
-
-  /* Spacing Scale (Base: 2px / 0.125rem) */
-  --spacing-unit: 0.125rem;
+  --line-height-small: 1.2;
+  --line-height-normal: 1.6;
 }
 
 ::selection {
@@ -49,7 +45,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-small);
+  color: var(--color-dark);
 }
 
 h1 {
@@ -60,10 +59,14 @@ h2 {
   font-size: var(--font-size-h2);
 }
 
+h3 {
+  font-size: var(--font-size-h3);
+}
+
 p {
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-p);
+  line-height: var(--line-height-normal);
 }
 
 /* Reset */

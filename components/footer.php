@@ -2,6 +2,7 @@
 
 </footer>
 
-</main>
 </content>
+</container>
+</main>
 </body>
