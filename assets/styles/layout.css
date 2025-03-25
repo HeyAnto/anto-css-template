@@ -24,7 +24,6 @@ body {
 main {
   width: 100%;
   max-width: 1920px;
-  flex: 1;
 
   border-left: solid 1px var(--color-dark);
   border-right: solid 1px var(--color-dark);
@@ -64,9 +63,36 @@ logo {
   background-color: var(--color-green);
 }
 
-/* Section */
-content {
+/* Structure */
+container {
   width: 100%;
+}
+
+content {
+  flex: 1;
+}
+
+/* Button */
+.btn {
+  padding: 0.625rem 0.75rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.btn-download {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+.btn-download:hover {
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-green) 50%, transparent);
 }
 
 /* Media Queries */

@@ -61,6 +61,10 @@
   gap: calc(var(--spacing-unit) * 5);
 }
 
+.gap-10 {
+  gap: calc(var(--spacing-unit) * 10);
+}
+
 /* Padding */
 .p-1 {
   padding: calc(var(--spacing-unit) * 1);
