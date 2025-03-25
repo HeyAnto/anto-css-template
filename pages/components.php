@@ -1,5 +1,3 @@
-<?php include_once "../components/head.php" ?>
-
 <section class="flex flex-column gap-5">
     <h1>
         <span>
@@ -15,5 +13,3 @@
         quel que soit le layout utilisé.
     </p>
 </section>
-
-<?php include_once "../components/footer.php" ?>

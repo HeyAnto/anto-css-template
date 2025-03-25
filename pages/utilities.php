@@ -1,5 +1,3 @@
-<?php include_once "../components/head.php" ?>
-
 <section class="flex flex-column gap-5">
     <h1>
         <span>
@@ -14,5 +12,3 @@
         de l’espacement (margin, padding, gap) et d’autres propriétés facilitant la mise en page.
     </p>
 </section>
-
-<?php include_once "../components/footer.php" ?>
