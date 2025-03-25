@@ -22,10 +22,5 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <?php echo $name; ?>
             </a>
         <?php endforeach; ?>
-
-        <a class="nav-btn nav-download flex align-center justify-center gap-3" href="/pages/download.php">
-            <img src="/assets/icons/icon-download.svg" alt="Télécharger">
-            Télécharger
-        </a>
     </nav>
 </sidebar>
