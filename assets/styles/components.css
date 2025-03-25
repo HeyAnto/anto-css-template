@@ -35,6 +35,7 @@ logo {
 
 /* Button */
 .btn {
+  width: fit-content;
   padding: 0.625rem 0.75rem;
 }
 

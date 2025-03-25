@@ -1,20 +1,30 @@
-<?php include_once "./components/head.php" ?>
+<?php
+ob_start();
 
-<section class="flex flex-column gap-5">
-    <h1>
-        <span>
-            <img src="/assets/images/emoji/emoji-paper.webp" alt="Emoji Paper">
-        </span>
-        Introduction
-    </h1>
+$routes = [
+    '/' => 'pages/introduction.php',
+    '/globals' => 'pages/globals.php',
+    '/utilities' => 'pages/utilities.php',
+    '/components' => 'pages/components.php',
+    '/layout' => 'pages/layout.php',
+];
 
-    <p>
-        Bienvenue dans la mini documentation de mon template CSS réutilisable.
-        J’ai conçu ce template selon ma propre manière de structurer et d’organiser mes projets web.
-        Pour l’instant, je l’utilise uniquement dans mes projets personnels,
-        car il me permet de démarrer rapidement avec une base solide et cohérente,
-        sans utiliser de framework extérieur comme Bootstrap ou Tailwind.
-    </p>
-</section>
+$request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$request_uri = rtrim($request_uri, '/');
+if (empty($request_uri)) {
+    $request_uri = '/';
+}
 
-<?php include_once "./components/footer.php" ?>
+$page_to_include = $routes[$request_uri] ?? 'pages/404.php';
+
+include_once "./_components/head.php";
+
+if (file_exists($page_to_include)) {
+    include_once $page_to_include;
+} else {
+    include_once "pages/404.php";
+}
+
+include_once "./_components/footer.php";
+
+ob_end_flush();
