@@ -17,8 +17,8 @@
     <main class="flex">
         <?php include_once "sidebar.php" ?>
 
-        <container class="flex flex-column">
+        <div class="main-container flex flex-column">
 
             <?php include_once "header.php" ?>
 
-            <content class="flex flex-column">
+            <div class="main-content flex flex-column p-25">

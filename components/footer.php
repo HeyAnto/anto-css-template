@@ -2,7 +2,7 @@
 
 </footer>
 
-</content>
-</container>
+</div>
+</div>
 </main>
 </body>

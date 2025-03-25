@@ -86,6 +86,10 @@
   padding: calc(var(--spacing-unit) * 10);
 }
 
+.p-25 {
+  padding: calc(var(--spacing-unit) * 25);
+}
+
 /* Margin */
 .m-1 {
   margin: calc(var(--spacing-unit) * 1);

@@ -1,1 +1,57 @@
+/* Sidebar */
+sidebar {
+  width: 100%;
+  max-width: 300px;
 
+  border-right: solid 1px var(--color-dark);
+}
+
+logo {
+  padding: 0.625rem 0.75rem;
+}
+
+.nav-btn {
+  padding: 0.625rem 0.75rem;
+}
+
+.nav-btn:hover {
+  background-color: var(--color-light-grey);
+}
+
+.active {
+  background-color: var(--color-light-grey);
+  pointer-events: none;
+}
+
+.nav-download {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.nav-download:hover {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+/* Button */
+.btn {
+  padding: 0.625rem 0.75rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.btn-download {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+.btn-download:hover {
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-green) 50%, transparent);
+}
