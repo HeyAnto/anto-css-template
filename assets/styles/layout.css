@@ -42,12 +42,136 @@ section {
   max-width: 600px;
 }
 
+/* Sidebar */
+sidebar {
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  border-right: solid 1px var(--color-dark);
+  background-color: var(--color-white);
+
+  transition: transform 0.3s ease;
+}
+
+logo {
+  padding: 0.625rem 0.75rem;
+}
+
+/* Sidebar Button */
+.nav-btn {
+  padding: 0.625rem 0.75rem;
+}
+
+.nav-btn:hover {
+  background-color: var(--color-light-grey);
+}
+
+.active {
+  background-color: var(--color-light-grey);
+  pointer-events: none;
+}
+
+.nav-download {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.nav-download:hover {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+/* Burger Button */
+.burger-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  padding: 0.625rem 0.75rem;
+
+  z-index: 10;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.burger-menu .burger-icon {
+  display: block;
+}
+
+.burger-menu .close-icon {
+  display: none;
+}
+
+.burger-menu.open .burger-icon {
+  display: none;
+}
+
+.burger-menu.open .close-icon {
+  display: block;
+}
+
+/* Header */
+.hide-on-mobile {
+  display: inline-block;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
+  /* Layout */
+  section {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  /* Sidebar */
+  sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  sidebar.open {
+    transform: translateX(0);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Header */
+  header .btn-primary,
+  .btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+  }
+
+  /* Layout */
+  section {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  /* Layout */
+  .main-content {
+    padding: 1.25rem;
+  }
 }

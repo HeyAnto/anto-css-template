@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="../assets/styles/layout.css">
 
     <title>Anto CSS Template</title>
-
-    <script src="/assets/js/navigation.js"></script>
 </head>
 
 <body class="flex justify-center">
