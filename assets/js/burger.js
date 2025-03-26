@@ -21,9 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function init() {
-    if (!isMobile()) {
+    if (isMobile()) {
+      sidebar.classList.remove("open");
+    } else {
       sidebar.classList.add("open");
-      return;
     }
 
     btnBurger.addEventListener("click", toggleMenu);

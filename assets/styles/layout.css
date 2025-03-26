@@ -139,18 +139,18 @@ logo {
     transform: translateX(-100%);
   }
 
+  sidebar.open {
+    transform: translateX(0);
+    width: 100%;
+    max-width: 100%;
+  }
+
   .burger-menu {
     display: flex;
   }
 
   .hide-on-mobile {
     display: none;
-  }
-
-  sidebar.open {
-    transform: translateX(0);
-    width: 100%;
-    max-width: 100%;
   }
 
   /* Header */
